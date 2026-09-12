@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# NLTK data (optional)
+nltk_data/
+
+# Logs
+*.log
+
+
+Flask
+flask-cors
+pandas
+numpy
+nltk
+spacy
+vaderSentiment
+joblib
+scikit-learn

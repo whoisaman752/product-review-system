@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Review Detector</title>
+
+<link rel="stylesheet" href="static/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>AI Detector</h2>
+
+<ul>
+
+<li onclick="showPage('home')">Home</li>
+<li onclick="showPage('reviews')">Reviews</li>
+<li onclick="showPage('products')">Products</li>
+<li onclick="showPage('settings')">Settings</li>
+
+</ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main">
+
+<!-- HOME PAGE -->
+
+<div id="home" class="page active">
+
+<h1>AI vs Human Review Detection</h1>
+
+<p class="subtitle">
+Detect reviews are AI-generated or written by real users.
+</p>
+
+<img src="https://www.legalsupportworld.com/wp-content/uploads/2024/07/AI-in-Document-Review.jpg" 
+class="home-image">
+
+<div class="stats">
+
+<div class="card">
+<h3>Total Reviews Analyzed</h3>
+<p id="totalReviews">0</p>
+</div>
+
+<div class="card">
+<h3>AI Reviews Detected</h3>
+<p id="aiReviews">0</p>
+</div>
+
+<div class="card">
+<h3>Human Reviews</h3>
+<p id="humanReviews">0</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- REVIEW ANALYZER -->
+
+<div id="reviews" class="page">
+
+<h1>Analyze Review</h1>
+
+<div class="analyzer">
+
+<textarea id="review_text" placeholder="Enter product review..."></textarea>
+
+<input type="number" id="overall" placeholder="Rating (1-5)" min="1" max="5">
+
+<input type="number" id="helpful_ratio" placeholder="Helpful Ratio (0-1)" step="0.01">
+
+<button onclick="detectReview()">Analyze Review</button>
+
+<div id="result"></div>
+
+</div>
+
+</div>
+
+<!-- PRODUCTS -->
+
+<div id="products" class="page">
+
+<h1>Products</h1>
+
+<p>Future feature: Analyze reviews product-wise.</p>
+
+</div>
+
+<!-- SETTINGS -->
+
+<div id="settings" class="page">
+
+<h1>Settings</h1>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<script src="static/script.js"></script>
+
+</body>
+</html>

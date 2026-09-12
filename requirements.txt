@@ -1,0 +1,9 @@
+Flask
+flask-cors
+pandas
+numpy
+nltk
+spacy
+vaderSentiment
+joblib
+scikit-learn
